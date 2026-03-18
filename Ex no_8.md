@@ -1,50 +1,45 @@
 # EX 8 C program to perform multiplication and division of two numbers using functions (without argument and without return type).
+## DATE:17-03-2026
 ## AIM:
 To write a C program to perform multiplication and division of two numbers using functions (without argument and without return type).
 
-## Algorithm
-1. Define functions to input numbers and return them.
-2. Create functions to perform multiplication and division using these inputs.
-3. In main, call multiplication function and store the result.
-4. Call division function and store the result.
-5. Display both multiplication and division results.
- 
+## Algorithm:
+1. Start. 
+2. Declare the variables. 
+3. Prompt the user to enter a value. 
+4. Read the value using scanf. 
+5. Enter number for multiplication and division. 
+6. End.    
 
 ## Program:
-```
-/*
-Program to perform multiplication and division of two numbers using functions (without argument and without return type).
-Developed by: Sai Ranjani K
-RegisterNumber: 212222060210
-#include<stdio.h>
-int mul(int a,int b)
-{
-    int c;
-    c=a*b;
-    return c;
-}
-int div(int a,int b)
-{
-    int d;
-    d=a/b;
-    return d;
-}
-int main()
-{
-    int a,b,e,f;
-    scanf("%d %d",&a,&b);
-    e=mul(a,b);
-    f=div(a,b);
-    printf("Multiplication: %d",e);
-    printf("\nDivision: %d",f);
-}
-*/
+```c program
+#include<stdio.h> 
+void multiply(int a,int b); 
+void div(int a,int b); 
+int main () 
+{ 
+int a,b; 
+scanf("%d%d",&a,&b); 
+multiply(a,b); 
+div(a,b); 
+} 
+void multiply(int a,int b) 
+{ 
+int product; 
+product= a*b; 
+printf("Multiplication: %d",product); 
+} 
+void div(int a,int b) 
+{ 
+int result; 
+result=a/b; 
+printf("\nDivision: %d",result); 
+} 
 ```
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/6bf32a33-8023-476f-9c7a-d444337e755a)
-
+![image](https://github.com/user-attachments/assets/0e5da423-26d0-4f8a-879f-7c9d8aa8a7a0)
 
 
 ## Result:
